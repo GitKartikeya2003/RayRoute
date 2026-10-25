@@ -1,12 +1,13 @@
 package com.example.PayRouteBackend.merchant;
 
 
+import com.example.PayRouteBackend.common.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
-public class Merchant {
+public class Merchant extends BaseEntity{
 
     @Column(nullable = false , length = 100)
     String name;

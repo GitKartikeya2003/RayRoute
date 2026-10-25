@@ -22,7 +22,7 @@ public class ApiException extends RuntimeException {
         return new ApiException(HttpStatus.CONFLICT, message);
     }
 
-    public static ApiException missing(String message) {
+    public static ApiException missing() {
 
         return new ApiException(HttpStatus.NOT_FOUND, "Resource not found ");
     }

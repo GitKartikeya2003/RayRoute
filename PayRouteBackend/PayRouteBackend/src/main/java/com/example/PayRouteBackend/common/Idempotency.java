@@ -6,7 +6,7 @@ public class Idempotency {
 
     }
 
-    private static void validate(String key) {
+    public static void validate(String key) {
 
         if (key == null || !key.matches("[a-zA-Z0-9_-]{8,100}")) {
 

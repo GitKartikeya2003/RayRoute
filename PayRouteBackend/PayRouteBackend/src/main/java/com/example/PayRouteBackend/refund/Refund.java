@@ -15,10 +15,13 @@ public class Refund extends BaseEntity {
 
 
     @Column(nullable = false, length = 48)
-    private String paymentID;
+    public String merchantId;
+
+    @Column(nullable = false, length = 48)
+    public String paymentID;
 
     @Column(nullable = false, length = 100)
-    private String idempotencyKey;
+    public String idempotencyKey;
 
     @Column(nullable = false)
     public long amount;
